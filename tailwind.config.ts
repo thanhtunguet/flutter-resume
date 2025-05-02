@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -51,6 +55,13 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				resume: {
+					primary: '#0a2540',
+					accent: '#3a7ca5',
+					light: '#f8fafc',
+					gray: '#64748b',
+					border: '#e2e8f0',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

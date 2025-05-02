@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +100,27 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .resume-section {
+    @apply mb-6;
+  }
+
+  .resume-section-title {
+    @apply text-lg font-semibold text-resume-primary mb-2 border-b border-resume-border pb-1;
+  }
+
+  .resume-subsection {
+    @apply mb-4;
+  }
+  
+  .resume-subsection-title {
+    @apply text-base font-medium text-resume-primary flex justify-between items-baseline;
+  }
+
+  .resume-bullet {
+    @apply ml-4 before:content-['•'] before:mr-2 before:text-resume-accent text-sm my-1;
   }
 }
